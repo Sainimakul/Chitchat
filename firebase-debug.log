@@ -1,0 +1,83 @@
+[debug] [2024-04-11T10:02:59.069Z] ----------------------------------------------------------------------
+[debug] [2024-04-11T10:02:59.073Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\makul\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-11T10:02:59.074Z] CLI Version:   13.7.1
+[debug] [2024-04-11T10:02:59.074Z] Platform:      win32
+[debug] [2024-04-11T10:02:59.075Z] Node Version:  v20.10.0
+[debug] [2024-04-11T10:02:59.075Z] Time:          Thu Apr 11 2024 15:32:59 GMT+0530 (India Standard Time)
+[debug] [2024-04-11T10:02:59.075Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-11T10:02:59.085Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-11T10:02:59.086Z] > authorizing via signed-in user (makulsaini9222@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\makul\OneDrive\Desktop\Chitchat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-11T10:03:36.769Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-11T10:03:38.155Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-04-11T10:03:38.155Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project chat-6d403 (Chat) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-04-11T10:03:42.961Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-04-11T10:03:42.961Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/chat-6d403
+[debug] [2024-04-11T10:03:44.961Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com 200
+[debug] [2024-04-11T10:03:44.961Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-04-11T10:03:44.963Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-04-11T10:03:44.963Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/chat-6d403
+[debug] [2024-04-11T10:03:45.722Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-04-11T10:03:45.722Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-04-11T10:03:55.725Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-04-11T10:03:55.726Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/chat-6d403
+[debug] [2024-04-11T10:03:58.011Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com 200
+[debug] [2024-04-11T10:03:58.012Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-04-11T10:03:58.017Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-6d403 [none]
+[debug] [2024-04-11T10:03:58.925Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-6d403 200
+[debug] [2024-04-11T10:03:58.926Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-6d403 {"projectId":"chat-6d403","projectNumber":"310874836798","displayName":"Chat","name":"projects/chat-6d403","resources":{"hostingSite":"chat-6d403","storageBucket":"chat-6d403.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_62392285-5395-4481-bd79-77986c43730a"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to n. 
+[info] Future modifications to n will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-04-11T10:04:20.461Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firestore.googleapis.com [none]
+[debug] [2024-04-11T10:04:20.461Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firestore.googleapis.com x-goog-quota-user=projects/chat-6d403
+[debug] [2024-04-11T10:04:22.583Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firestore.googleapis.com 200
+[debug] [2024-04-11T10:04:22.583Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-6d403/services/firestore.googleapis.com [omitted]
+[debug] [2024-04-11T10:04:22.584Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chat-6d403/databases/(default) [none]
+[debug] [2024-04-11T10:04:24.663Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chat-6d403/databases/(default) 200
+[debug] [2024-04-11T10:04:24.663Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chat-6d403/databases/(default) {"name":"projects/chat-6d403/databases/(default)","uid":"e83364ef-6ff7-47c7-b419-8baee379a8f7","createTime":"2024-04-11T09:20:08.660013Z","updateTime":"2024-04-11T09:20:08.660013Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-04-11T09:20:08.660013Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IILkjrb0uYUDMLv5xcXsuYUD"}
+[debug] [2024-04-11T10:04:24.663Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-04-11T10:04:24.664Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-11T10:04:24.664Z] > authorizing via signed-in user (makulsaini9222@gmail.com)
+[debug] [2024-04-11T10:04:24.664Z] [iam] checking project chat-6d403 for permissions ["firebase.projects.get"]
+[debug] [2024-04-11T10:04:24.665Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-6d403:testIamPermissions [none]
+[debug] [2024-04-11T10:04:24.665Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-6d403:testIamPermissions x-goog-quota-user=projects/chat-6d403
+[debug] [2024-04-11T10:04:24.665Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-6d403:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-11T10:04:26.686Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-6d403:testIamPermissions 200
+[debug] [2024-04-11T10:04:26.686Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-6d403:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
