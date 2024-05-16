@@ -1,10 +1,8 @@
-import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
 const Login = () => {
-  const [err, setErr] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -14,11 +12,14 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/")
+      navigate("/");  // Navigate to home on successful login
     } catch (err) {
-      setErr(true);
+      // Display an alert and then redirect back to login page
+      alert("Error in login...");  // Alert with the custom message
+      navigate("/login", { replace: true });  // Redirect to login for reset (might need adjustment if "/login" isn't correct)
     }
   };
+
   return (
     <div className="formContainer">
       <div className="formWrapper">
@@ -28,7 +29,6 @@ const Login = () => {
           <input type="email" placeholder="email" />
           <input type="password" placeholder="password" />
           <button>Sign in</button>
-          {err && <span>Something went wrong</span>}
         </form>
         <p>You don't have an account? <Link to="/register">Register</Link></p>
       </div>
