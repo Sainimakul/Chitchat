@@ -4,13 +4,12 @@ import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD2oA82M2_OWgNS2dBuQz1ykqDHWaJ-_Ko",
-  authDomain: "chat-6d403.firebaseapp.com",
-  projectId: "chat-6d403",
-  storageBucket: "chat-6d403.appspot.com",
-  messagingSenderId: "310874836798",
-  appId: "1:310874836798:web:2574784ba6443cc0a2e66f"
-};
+  apiKey: "AIzaSyBMQibVD3PR7N-ZgcvQR-qIWX5D3-4Wn_g",
+  authDomain: "chitchat-47d73.firebaseapp.com",
+  projectId: "chitchat-47d73",
+  storageBucket: "chitchat-47d73.appspot.com",
+  messagingSenderId: "558959608232",
+  appId: "1:558959608232:web:9470304d2c99f3d7be5d9d"};
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
